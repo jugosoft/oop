@@ -1,0 +1,106 @@
+﻿<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{CA2C3217-CD47-46A0-A353-CE8E0DFF1555}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <NoStandardLibraries>false</NoStandardLibraries>
+    <AssemblyName>ConsoleApplication</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>OOP</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".gitattributes" />
+    <None Include=".gitignore" />
+    <None Include=".git\COMMIT_EDITMSG" />
+    <None Include=".git\config" />
+    <None Include=".git\description" />
+    <None Include=".git\HEAD" />
+    <None Include=".git\hooks\applypatch-msg.sample" />
+    <None Include=".git\hooks\commit-msg.sample" />
+    <None Include=".git\hooks\post-update.sample" />
+    <None Include=".git\hooks\pre-applypatch.sample" />
+    <None Include=".git\hooks\pre-commit.sample" />
+    <None Include=".git\hooks\pre-push.sample" />
+    <None Include=".git\hooks\pre-rebase.sample" />
+    <None Include=".git\hooks\pre-receive.sample" />
+    <None Include=".git\hooks\prepare-commit-msg.sample" />
+    <None Include=".git\hooks\update.sample" />
+    <None Include=".git\index" />
+    <None Include=".git\info\exclude" />
+    <None Include=".git\logs\HEAD" />
+    <None Include=".git\logs\refs\heads\master" />
+    <None Include=".git\objects\03\626f9178009d1e5a175816dbb71bf9c1f57fcb" />
+    <None Include=".git\objects\15\302dc6922c9f31f6d04aa7a5ac418b62b24f33" />
+    <None Include=".git\objects\1f\f0c423042b46cb1d617b81efb715defbe8054d" />
+    <None Include=".git\objects\35\7bf2f94319d6c780299e470f0fa73f0d729372" />
+    <None Include=".git\objects\3a\6ae8cce02f0f2d489333000a884c376c67ee10" />
+    <None Include=".git\objects\3c\4efe206bd0e7230ad0ae8396a3c883c8207906" />
+    <None Include=".git\objects\4e\0d29ae9916992e48421b7bef1afba2234257c2" />
+    <None Include=".git\objects\57\47640c0d4a1326608fc75acdd49beb4e653f46" />
+    <None Include=".git\objects\73\1f6de6c291e303814b02808f34140fe560e8e4" />
+    <None Include=".git\objects\91\e3470e1645e6e8d0de6fe9f6b242f366e9a393" />
+    <None Include=".git\objects\e0\d5d3d2f9b0adf7860303b292cf4f044efe3d17" />
+    <None Include=".git\objects\e4\b480433cac52d53290366b28937020c0d64fea" />
+    <None Include=".git\objects\fc\add7b5c56005f1fe8ef167b51fe95451d90602" />
+    <None Include=".git\ORIG_HEAD" />
+    <None Include=".git\refs\heads\master" />
+    <None Include=".vs\OOP Basics\v15\.suo" />
+    <None Include=".vs\OOP Basics\v15\Server\sqlite3\db.lock" />
+    <None Include=".vs\OOP Basics\v15\Server\sqlite3\storage.ide" />
+    <None Include=".vs\OOP Basics\v15\Server\sqlite3\storage.ide-shm" />
+    <None Include=".vs\OOP Basics\v15\Server\sqlite3\storage.ide-wal" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include=".git\ms-persist.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="OOP Basics\Good.cs" />
+    <Compile Include="OOP Basics\Goods\HDD.cs" />
+    <Compile Include="OOP Basics\Goods\Laptop.cs" />
+    <Compile Include="OOP Basics\Goods\TV.cs" />
+    <Compile Include="OOP Basics\Shop.cs" />
+    <Compile Include="OOP Basics\Worker.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include=".git\objects\info\" />
+    <Folder Include=".git\objects\pack\" />
+    <Folder Include=".git\refs\tags\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSHARP.Targets" />
+  <ProjectExtensions>
+    <VisualStudio AllowExistingFolder="true" />
+  </ProjectExtensions>
+</Project>
