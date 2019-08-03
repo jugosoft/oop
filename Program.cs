@@ -7,19 +7,19 @@ namespace OOP
     {
         public static void Main()
         {
-            Shop shop = new Shop("SomeStore");
+            IShopable shop = new Shop("SomeStore");
 
-            Worker worker1 = new Worker("Larisa", 28);
-            Worker worker2 = new Worker("Klarisa", 21);
+            IWorkable worker1 = new Worker("Larisa", 28);
+            IWorkable worker2 = new Worker("Klarisa", 21);
             shop.AddWorker(worker1);
             shop.AddWorker(worker2);
 
-            Good tv1 = new TV(5000, "LG", "228K");
-            Good tv2 = new TV(5000, "SAmsung", "13TGR37");
-            Good laptop1 = new Laptop(228000, "Apple", "Makbook 20 late");
-            Good laptop2 = new Laptop(228000, "Apple", "Makbook 21 early");
-            Good laptop3 = new Laptop(228000, "Apple", "Makbook 22 late");
-            Good hdd = new HDD(1234, "Toshiba", "Don't have any idea...", 500);
+            ITradable tv1 = new TV(5000, "LG", "228K");
+            ITradable tv2 = new TV(5000, "SAmsung", "13TGR37");
+            ITradable laptop1 = new Laptop(228000, "Apple", "Makbook 20 late");
+            ITradable laptop2 = new Laptop(228000, "Apple", "Makbook 21 early");
+            ITradable laptop3 = new Laptop(228000, "Apple", "Makbook 22 late");
+            ITradable hdd = new HDD(1234, "Toshiba", "Don't have any idea...", 500);
             shop.AddGood(tv1);
             shop.AddGood(tv2);
             shop.AddGood(laptop1);
