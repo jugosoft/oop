@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace OOP_Basics
 {
-    public class Good
+    public abstract class Good : ITradable
     {
         public int Price { get; set; }
         public string Name { get; set; }

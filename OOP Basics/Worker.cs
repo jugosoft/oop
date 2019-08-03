@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace OOP_Basics
+﻿namespace OOP_Basics
 {
-    public class Worker
+    public class Worker : IWorkable
     {
         public string Name { get; private set; }
         public int Age { get; private set; }
@@ -20,6 +14,11 @@ namespace OOP_Basics
         public void DoWork()
         {
 
+        }
+
+        public override string ToString()
+        {
+            return "Worker " + Name + ". Age " + Age + ".";
         }
     }
 }

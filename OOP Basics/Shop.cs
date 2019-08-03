@@ -1,15 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace OOP_Basics
 {
-    public class Shop
+    public class Shop : IShopable
     {
-        private IList<Good> goods;
-        private IList<Worker> workers;
+        private IList<ITradable> goods;
+        private IList<IWorkable> workers;
         private string name;
 
         public Shop(string name)
@@ -21,14 +18,14 @@ namespace OOP_Basics
 
             this.name = name;
 
-            goods = new List<Good>();
-            workers = new List<Worker>();
+            goods = new List<ITradable>();
+            workers = new List<IWorkable>();
         }
 
         public string GetName()
             => this.name;
 
-        public void AddGood(Good good)
+        public void AddGood(ITradable good)
         {
             if (good != null)
             {
@@ -36,7 +33,7 @@ namespace OOP_Basics
             }
         }
 
-        public void AddWorker(Worker worker)
+        public void AddWorker(IWorkable worker)
         {
             if (worker != null)
             {
@@ -44,12 +41,12 @@ namespace OOP_Basics
             }
         }
 
-        public IList<Good> GetGoods()
+        public IList<ITradable> GetGoods()
         {
             return goods;
         }
 
-        public IList<Worker> GetWorkers()
+        public IList<IWorkable> GetWorkers()
         {
             return workers;
         }
